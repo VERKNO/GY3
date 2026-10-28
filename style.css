@@ -226,6 +226,7 @@ a { color: inherit; }
 }
 
 .block-body { max-width: 64ch; }
+.block-body.wide { max-width: 72ch; }
 .block-body h3 {
   font-size: 17px;
   margin: 28px 0 10px;
@@ -273,6 +274,73 @@ a { color: inherit; }
   font-size: 14.5px;
   color: var(--text-dim);
   line-height: 1.5;
+}
+
+.groups-row {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* training plans by level */
+
+.level-card {
+  border: 1px solid var(--line);
+  padding: 20px 22px 22px;
+  margin: 24px 0;
+}
+.level-card:first-of-type { margin-top: 28px; }
+
+.level-card h3 {
+  margin: 0 0 6px !important;
+  font-family: var(--serif-display);
+  font-size: 19px;
+  color: var(--brass);
+  font-weight: 600;
+}
+
+.level-sub {
+  color: var(--text-dim);
+  font-size: 14.5px;
+  margin: 0 0 16px;
+}
+
+.level-ex {
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+  counter-reset: ex;
+}
+.level-ex li {
+  display: grid;
+  grid-template-columns: 22px 1.5fr 1fr auto;
+  gap: 10px;
+  align-items: baseline;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 14.5px;
+}
+.level-ex li:last-child { border-bottom: none; }
+.level-ex li::before {
+  counter-increment: ex;
+  content: counter(ex) ".";
+  color: var(--text-dim);
+  font-size: 13px;
+}
+.ex-name { font-weight: 600; color: var(--text); }
+.ex-group { color: var(--text-dim); font-size: 13px; }
+.ex-sets {
+  color: var(--brass);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  text-align: right;
+}
+
+.level-total {
+  margin: 0;
+  font-size: 14px;
+  color: var(--text-dim);
+  border-left: 2px solid var(--iron-green);
+  padding-left: 12px;
 }
 
 /* weekly combo table */
@@ -400,10 +468,14 @@ a { color: inherit; }
   .wrap { padding: 0 18px; }
   .hero { padding: 44px 0 32px; }
   .fact-row { grid-template-columns: 1fr; }
+  .groups-row { grid-template-columns: 1fr; }
   .two-col { grid-template-columns: 1fr; gap: 24px; }
   .combo-row { grid-template-columns: 1fr; gap: 2px; }
   .combo-row span:first-child { font-weight: 600; margin-bottom: 2px; }
   .combo-head { display: none; }
+  .level-ex li { grid-template-columns: 1fr; gap: 2px; padding: 10px 0; }
+  .level-ex li::before { display: none; }
+  .ex-sets { text-align: left; }
   .block { padding: 40px 0; }
 }
 

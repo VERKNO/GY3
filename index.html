@@ -19,7 +19,7 @@
       <div id="hubMenu" class="hub-menu" hidden>
         <p class="hub-menu-label">Andrew's apps</p>
         <a href="#" class="hub-item hub-current">G4M — Gym basics</a>
-        <a href="https://verkno.github.io/l4ng/" class="hub-item">L4NG — Language grammar</a>
+        <a href="https://verkno.github.io/L4NG/" class="hub-item">L4NG — Language grammar</a>
       </div>
     </nav>
     <button id="langBtn" class="lang-btn" type="button">ID</button>
@@ -40,7 +40,9 @@
     <div class="wrap jump-row">
       <a href="#resistance" data-en="Resistance" data-id="Resistance">Resistance</a>
       <a href="#start" data-en="Starting point" data-id="Titik awal">Starting point</a>
+      <a href="#groups" data-en="Muscle groups" data-id="Kelompok otot">Muscle groups</a>
       <a href="#week" data-en="Weekly set-up" data-id="Jadwal mingguan">Weekly set-up</a>
+      <a href="#levels" data-en="Plans by level" data-id="Rencana per level">Plans by level</a>
       <a href="#heavy" data-en="Adding weight" data-id="Menambah beban">Adding weight</a>
       <a href="#rules" data-en="Do &amp; don't" data-id="Lakukan &amp; hindari">Do &amp; don't</a>
       <a href="#myths" data-en="Myths vs facts" data-id="Mitos vs fakta">Myths vs facts</a>
@@ -88,8 +90,44 @@
     </div>
   </section>
 
+  <!-- MUSCLE GROUPS -->
+  <section id="groups" class="block">
+    <div class="wrap block-grid">
+      <h2 data-en="The major muscle groups" data-id="Kelompok otot utama">The major muscle groups</h2>
+      <div class="block-body">
+        <p data-en="The plans further down are built around these groups, so a quick map of them first. Most gym movements work several at once; the name just says which one does the most work." data-id="Rencana latihan di bawah disusun berdasarkan kelompok-kelompok ini, jadi berikut gambaran singkatnya. Kebanyakan gerakan di gym melatih beberapa kelompok sekaligus; namanya hanya menunjukkan mana yang bekerja paling keras.">The plans further down are built around these groups, so a quick map of them first. Most gym movements work several at once; the name just says which one does the most work.</p>
+        <div class="fact-row groups-row">
+          <div class="fact-card">
+            <p class="fact-k" data-en="Chest" data-id="Dada">Chest</p>
+            <p class="fact-v" data-en="Pushes weight away from the body. Worked by bench press, push-ups, chest fly." data-id="Mendorong beban menjauh dari tubuh. Dilatih lewat bench press, push-up, chest fly.">Pushes weight away from the body. Worked by bench press, push-ups, chest fly.</p>
+          </div>
+          <div class="fact-card">
+            <p class="fact-k" data-en="Back" data-id="Punggung">Back</p>
+            <p class="fact-v" data-en="Pulls weight toward the body and holds posture upright. Worked by rows, pull-ups, lat pulldowns." data-id="Menarik beban mendekat ke tubuh dan menjaga postur tegak. Dilatih lewat row, pull-up, lat pulldown.">Pulls weight toward the body and holds posture upright. Worked by rows, pull-ups, lat pulldowns.</p>
+          </div>
+          <div class="fact-card">
+            <p class="fact-k" data-en="Shoulders" data-id="Bahu">Shoulders</p>
+            <p class="fact-v" data-en="Lifts and rotates the arm. Shared by almost every push and pull you do. Worked directly by presses and raises." data-id="Mengangkat dan memutar lengan. Ikut bekerja di hampir semua gerakan push dan pull. Dilatih langsung lewat press dan raise.">Lifts and rotates the arm. Shared by almost every push and pull you do. Worked directly by presses and raises.</p>
+          </div>
+          <div class="fact-card">
+            <p class="fact-k" data-en="Arms (biceps &amp; triceps)" data-id="Lengan (biceps &amp; triceps)">Arms (biceps &amp; triceps)</p>
+            <p class="fact-v" data-en="Biceps bend the elbow, triceps straighten it. Both get plenty of work from back and chest exercises; curls and pressdowns add extra, direct work." data-id="Biceps membengkokkan siku, triceps meluruskannya. Keduanya sudah ikut bekerja lewat latihan punggung dan dada; curl dan pressdown menambah kerja langsung ekstra.">Biceps bend the elbow, triceps straighten it. Both get plenty of work from back and chest exercises; curls and pressdowns add extra, direct work.</p>
+          </div>
+          <div class="fact-card">
+            <p class="fact-k" data-en="Core" data-id="Core / inti tubuh">Core</p>
+            <p class="fact-v" data-en="Keeps the spine stable under load. Works during almost every standing exercise, not only planks and crunches." data-id="Menjaga tulang belakang stabil saat menahan beban. Ikut bekerja di hampir semua gerakan berdiri, bukan cuma saat plank atau crunch.">Keeps the spine stable under load. Works during almost every standing exercise, not only planks and crunches.</p>
+          </div>
+          <div class="fact-card">
+            <p class="fact-k" data-en="Legs (quads, hamstrings, glutes, calves)" data-id="Kaki (quadriceps, hamstring, glutes, betis)">Legs (quads, hamstrings, glutes, calves)</p>
+            <p class="fact-v" data-en="The body's biggest muscles, usually needing the most total work. Worked by squats, deadlifts, lunges, leg press." data-id="Otot terbesar di tubuh, biasanya butuh total latihan paling banyak. Dilatih lewat squat, deadlift, lunge, leg press.">The body's biggest muscles, usually needing the most total work. Worked by squats, deadlifts, lunges, leg press.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- WEEKLY SET-UP -->
-  <section id="week" class="block">
+  <section id="week" class="block alt">
     <div class="wrap block-grid">
       <h2 data-en="Setting up a week" data-id="Menyusun jadwal mingguan">Setting up a week</h2>
       <div class="block-body">
@@ -124,6 +162,62 @@
         </div>
         <p class="note" data-en="Heavier weight with fewer reps builds raw strength; lighter weight with more reps leans toward endurance and muscle size. Most beginners do best in the middle row." data-id="Beban lebih berat dengan reps lebih sedikit melatih kekuatan murni; beban lebih ringan dengan reps lebih banyak lebih condong ke daya tahan dan ukuran otot. Kebanyakan pemula paling cocok di baris tengah.">Heavier weight with fewer reps builds raw strength; lighter weight with more reps leans toward endurance and muscle size. Most beginners do best in the middle row.</p>
         <p data-en="Give the same muscle group at least one full day off before training it again — that rest is when the actual adaptation happens, not the workout itself." data-id="Beri jeda minimal satu hari penuh untuk kelompok otot yang sama sebelum dilatih lagi — justru saat istirahat itulah adaptasi otot benar-benar terjadi, bukan saat latihan.">Give the same muscle group at least one full day off before training it again — that rest is when the actual adaptation happens, not the workout itself.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANS BY LEVEL -->
+  <section id="levels" class="block">
+    <div class="wrap block-grid">
+      <h2 data-en="Plans by level: minimum for health, extra for growth" data-id="Rencana per level: minimum untuk kesehatan, ekstra untuk pertumbuhan otot">Plans by level: minimum for health, extra for growth</h2>
+      <div class="block-body wide">
+        <p data-en="Health authorities (WHO, and the ACSM/NSCA guidelines most gyms train on) recommend resistance work that covers every major muscle group at least twice a week. That's the minimum viable dose — enough to count as a real health benefit, even at low volume." data-id="Lembaga kesehatan (WHO, dan pedoman ACSM/NSCA yang dipakai kebanyakan pelatih gym) merekomendasikan latihan beban yang menyentuh setiap kelompok otot utama minimal dua kali seminggu. Itulah dosis minimum yang masuk akal — cukup untuk dihitung sebagai manfaat kesehatan nyata, bahkan dengan volume rendah.">Health authorities (WHO, and the ACSM/NSCA guidelines most gyms train on) recommend resistance work that covers every major muscle group at least twice a week. That's the minimum viable dose — enough to count as a real health benefit, even at low volume.</p>
+        <p data-en="Beyond that minimum, research on training volume (summarised in meta-analyses by Schoenfeld and colleagues) finds a dose-response pattern: more weekly sets per muscle group, up to somewhere around 10–20, tends to build more muscle and strength than fewer — with returns tapering off past that. So the plans below show both numbers: a minimum that covers the health guideline, and an “extra” range if the goal is visible strength or size, not just general health." data-id="Di atas minimum itu, riset tentang volume latihan (dirangkum dalam meta-analisis oleh Schoenfeld dan rekan-rekannya) menemukan pola dose-response: makin banyak set per minggu untuk satu kelompok otot, sampai sekitar 10–20 set, cenderung membangun otot dan kekuatan lebih banyak dibanding set yang lebih sedikit — dengan hasil yang makin melandai setelah itu. Jadi rencana di bawah menunjukkan dua angka: minimum yang memenuhi pedoman kesehatan, dan rentang “ekstra” kalau tujuannya kekuatan atau ukuran otot yang terlihat, bukan cuma kesehatan umum.">Beyond that minimum, research on training volume (summarised in meta-analyses by Schoenfeld and colleagues) finds a dose-response pattern: more weekly sets per muscle group, up to somewhere around 10–20, tends to build more muscle and strength than fewer — with returns tapering off past that. So the plans below show both numbers: a minimum that covers the health guideline, and an “extra” range if the goal is visible strength or size, not just general health.</p>
+
+        <div class="level-card">
+          <h3 data-en="Beginner" data-id="Pemula">Beginner</h3>
+          <p class="level-sub" data-en="Full-body, 2–3 sessions a week, a rest day between. One movement per major group — this alone meets the minimum viable dose for general health." data-id="Full-body, 2–3 sesi seminggu, dengan hari istirahat di antaranya. Satu gerakan per kelompok otot utama — ini saja sudah memenuhi dosis minimum untuk kesehatan umum.">Full-body, 2–3 sessions a week, a rest day between. One movement per major group — this alone meets the minimum viable dose for general health.</p>
+          <ol class="level-ex">
+            <li><span class="ex-name" data-en="Chest press (machine or dumbbell)" data-id="Chest press (mesin atau dumbbell)">Chest press (machine or dumbbell)</span><span class="ex-group" data-en="chest, shoulders, triceps" data-id="dada, bahu, triceps">chest, shoulders, triceps</span><span class="ex-sets">2 × 10–15</span></li>
+            <li><span class="ex-name" data-en="Seated row or lat pulldown" data-id="Seated row atau lat pulldown">Seated row or lat pulldown</span><span class="ex-group" data-en="back, biceps" data-id="punggung, biceps">back, biceps</span><span class="ex-sets">2 × 10–15</span></li>
+            <li><span class="ex-name" data-en="Leg press or bodyweight squat" data-id="Leg press atau squat bodyweight">Leg press or bodyweight squat</span><span class="ex-group" data-en="quads, glutes" data-id="quadriceps, glutes">quads, glutes</span><span class="ex-sets">2 × 10–15</span></li>
+            <li><span class="ex-name" data-en="Light Romanian deadlift or hip hinge" data-id="Romanian deadlift ringan atau hip hinge">Light Romanian deadlift or hip hinge</span><span class="ex-group" data-en="hamstrings, glutes, lower back" data-id="hamstring, glutes, punggung bawah">hamstrings, glutes, lower back</span><span class="ex-sets">2 × 10–12</span></li>
+            <li><span class="ex-name" data-en="Shoulder press (machine)" data-id="Shoulder press (mesin)">Shoulder press (machine)</span><span class="ex-group" data-en="shoulders" data-id="bahu">shoulders</span><span class="ex-sets">2 × 10–15</span></li>
+            <li><span class="ex-name" data-en="Plank" data-id="Plank">Plank</span><span class="ex-group" data-en="core" data-id="core">core</span><span class="ex-sets">2 × 20–30s</span></li>
+          </ol>
+          <p class="level-total" data-en="≈4–6 sets a week per muscle group across 2–3 sessions — this is the minimum viable range: it meets the WHO/ACSM health guideline, even before chasing extra growth." data-id="≈4–6 set seminggu per kelompok otot dalam 2–3 sesi — ini rentang minimum yang masuk akal: sudah memenuhi pedoman kesehatan WHO/ACSM, bahkan sebelum mengejar pertumbuhan ekstra.">≈4–6 sets a week per muscle group across 2–3 sessions — this is the minimum viable range: it meets the WHO/ACSM health guideline, even before chasing extra growth.</p>
+        </div>
+
+        <div class="level-card">
+          <h3 data-en="Intermediate" data-id="Menengah">Intermediate</h3>
+          <p class="level-sub" data-en="3–4 sessions a week, split by body region (e.g. upper/lower, or push/pull/legs). Each group gets a second exercise and hits the research-backed range for extra growth, not just maintenance." data-id="3–4 sesi seminggu, dibagi berdasarkan area tubuh (misalnya atas/bawah, atau push/pull/legs). Setiap kelompok otot mendapat gerakan kedua dan mencapai rentang yang didukung riset untuk pertumbuhan ekstra, bukan cuma menjaga kondisi.">3–4 sessions a week, split by body region (e.g. upper/lower, or push/pull/legs). Each group gets a second exercise and hits the research-backed range for extra growth, not just maintenance.</p>
+          <ol class="level-ex">
+            <li><span class="ex-name" data-en="Bench press + incline dumbbell press" data-id="Bench press + incline dumbbell press">Bench press + incline dumbbell press</span><span class="ex-group" data-en="chest, shoulders, triceps" data-id="dada, bahu, triceps">chest, shoulders, triceps</span><span class="ex-sets">3 × 8–12, 2 × 10–12</span></li>
+            <li><span class="ex-name" data-en="Pull-up or lat pulldown + seated row" data-id="Pull-up atau lat pulldown + seated row">Pull-up or lat pulldown + seated row</span><span class="ex-group" data-en="back, biceps" data-id="punggung, biceps">back, biceps</span><span class="ex-sets">3 × 8–12, 2 × 10–12</span></li>
+            <li><span class="ex-name" data-en="Squat + leg curl" data-id="Squat + leg curl">Squat + leg curl</span><span class="ex-group" data-en="quads, hamstrings, glutes" data-id="quadriceps, hamstring, glutes">quads, hamstrings, glutes</span><span class="ex-sets">3 × 8–12, 2 × 10–15</span></li>
+            <li><span class="ex-name" data-en="Romanian deadlift" data-id="Romanian deadlift">Romanian deadlift</span><span class="ex-group" data-en="hamstrings, glutes, lower back" data-id="hamstring, glutes, punggung bawah">hamstrings, glutes, lower back</span><span class="ex-sets">3 × 8–10</span></li>
+            <li><span class="ex-name" data-en="Overhead press + lateral raise" data-id="Overhead press + lateral raise">Overhead press + lateral raise</span><span class="ex-group" data-en="shoulders" data-id="bahu">shoulders</span><span class="ex-sets">3 × 8–12, 2 × 12–15</span></li>
+            <li><span class="ex-name" data-en="Biceps curl + triceps pressdown" data-id="Biceps curl + triceps pressdown">Biceps curl + triceps pressdown</span><span class="ex-group" data-en="arms" data-id="lengan">arms</span><span class="ex-sets">2 × 10–15 each</span></li>
+            <li><span class="ex-name" data-en="Hanging leg raise or cable crunch" data-id="Hanging leg raise atau cable crunch">Hanging leg raise or cable crunch</span><span class="ex-group" data-en="core" data-id="core">core</span><span class="ex-sets">2–3 × 12–15</span></li>
+          </ol>
+          <p class="level-total" data-en="≈8–14 sets a week per muscle group — inside the range studies associate with greater muscle and strength gains than the beginner minimum." data-id="≈8–14 set seminggu per kelompok otot — berada dalam rentang yang menurut riset dikaitkan dengan hasil otot dan kekuatan lebih besar dibanding minimum pemula.">≈8–14 sets a week per muscle group — inside the range studies associate with greater muscle and strength gains than the beginner minimum.</p>
+        </div>
+
+        <div class="level-card">
+          <h3 data-en="Advanced" data-id="Lanjutan">Advanced</h3>
+          <p class="level-sub" data-en="4–6 sessions a week, specialised by body part, usually periodised (volume and intensity planned in cycles). Near the upper end of what's actually been studied." data-id="4–6 sesi seminggu, dikhususkan per bagian tubuh, biasanya diperiodisasi (volume dan intensitas direncanakan dalam siklus). Mendekati batas atas dari apa yang benar-benar sudah diteliti.">4–6 sessions a week, specialised by body part, usually periodised (volume and intensity planned in cycles). Near the upper end of what's actually been studied.</p>
+          <ol class="level-ex">
+            <li><span class="ex-name" data-en="2–3 chest exercises (flat, incline, fly)" data-id="2–3 gerakan dada (flat, incline, fly)">2–3 chest exercises (flat, incline, fly)</span><span class="ex-group" data-en="chest" data-id="dada">chest</span><span class="ex-sets">≈12–16/wk</span></li>
+            <li><span class="ex-name" data-en="2–3 back exercises (rows, pulldowns, deadlift variations)" data-id="2–3 gerakan punggung (row, pulldown, variasi deadlift)">2–3 back exercises (rows, pulldowns, deadlift variations)</span><span class="ex-group" data-en="back" data-id="punggung">back</span><span class="ex-sets">≈14–18/wk</span></li>
+            <li><span class="ex-name" data-en="Legs split into quad-dominant and hip-dominant days" data-id="Kaki dipisah jadi hari dominan quad dan dominan hip">Legs split into quad-dominant and hip-dominant days</span><span class="ex-group" data-en="quads, hamstrings, glutes" data-id="quadriceps, hamstring, glutes">quads, hamstrings, glutes</span><span class="ex-sets">≈16–20/wk each</span></li>
+            <li><span class="ex-name" data-en="Press + 2 raise variations" data-id="Press + 2 variasi raise">Press + 2 raise variations</span><span class="ex-group" data-en="shoulders" data-id="bahu">shoulders</span><span class="ex-sets">≈12–15/wk</span></li>
+            <li><span class="ex-name" data-en="Direct biceps and triceps work" data-id="Latihan langsung biceps dan triceps">Direct biceps and triceps work</span><span class="ex-group" data-en="arms" data-id="lengan">arms</span><span class="ex-sets">≈10–14/wk each</span></li>
+            <li><span class="ex-name" data-en="Varied core work across sessions" data-id="Latihan core yang bervariasi tiap sesi">Varied core work across sessions</span><span class="ex-group" data-en="core" data-id="core">core</span><span class="ex-sets">≈8–12/wk</span></li>
+          </ol>
+          <p class="level-total" data-en="≈12–20 sets a week per muscle group — the upper end of the currently-studied range. Pushing much higher usually costs more recovery than it returns, and isn't well supported by the research." data-id="≈12–20 set seminggu per kelompok otot — batas atas dari rentang yang sudah diteliti. Menambah jauh lebih banyak biasanya menuntut pemulihan lebih besar daripada hasilnya, dan tidak banyak didukung riset.">≈12–20 sets a week per muscle group — the upper end of the currently-studied range. Pushing much higher usually costs more recovery than it returns, and isn't well supported by the research.</p>
+        </div>
+
+        <p class="note" data-en="Sources: WHO Guidelines on Physical Activity and Sedentary Behaviour (2020); the ACSM/NSCA progression model for resistance training, Ratamess et al. (2009); and the dose-response meta-analysis on weekly training volume and muscle growth by Schoenfeld, Ogborn &amp; Krieger (2017), with later volume reviews (e.g. Baz-Valle et al., 2022) broadly supporting the same pattern." data-id="Sumber: Pedoman Aktivitas Fisik dan Perilaku Sedentari WHO (2020); model progresi ACSM/NSCA untuk latihan beban, Ratamess dkk. (2009); dan meta-analisis dose-response tentang volume latihan mingguan dan pertumbuhan otot oleh Schoenfeld, Ogborn &amp; Krieger (2017), dengan kajian volume lanjutan (misalnya Baz-Valle dkk., 2022) yang secara umum mendukung pola yang sama.">Sources: WHO Guidelines on Physical Activity and Sedentary Behaviour (2020); the ACSM/NSCA progression model for resistance training, Ratamess et al. (2009); and the dose-response meta-analysis on weekly training volume and muscle growth by Schoenfeld, Ogborn &amp; Krieger (2017), with later volume reviews (e.g. Baz-Valle et al., 2022) broadly supporting the same pattern.</p>
       </div>
     </div>
   </section>
